@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | CodeCare</title>
+    <link rel="stylesheet" href="../Css/login.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/login.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+
+<div id="mainco">
+           <header class="navx">
+            <nav class="navbar">.
+               <div class="logo-container">
+                    <a href="/Html/Home.html">
+                <img src="../Images/logo.png" alt="Logo" class="logo" />
+                </a>
+                </div>
+                <ul class="nav-links">
+                <li><a href="/Html/Home.html">Home</a></li>
+                <li><a href="./Doctor Profiles.html">Doc Team</a></li>
+                <li><a href="/Html/Terms of Service.html">Services</a></li>
+                <li><a href="/Html/Contact us.html">Contact</a></li>
+                </ul>
+            </nav>
+            </header>
+
+
+
+
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img id="logo" src="../Images/logo.png" alt="CodeCare Logo" />
+        </div>
+
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+            <h1>Welcome to <span class="highlight">CodeCare</span></h1>
+            <p style="font-weight: 540;">Please log in to continue</p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container">
+            <form action="" method="post" id="form">
+                <div class="input-group">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email" placeholder="Enter your email" required oninput="handleSubmit()" />
+                    <span class="error" id="emailerror"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required oninput="handleSubmit()" />
+                    <span class="error" id="passworderror"></span>
+                </div>
+
+                <button type="submit" id="submit-btn">Login</button>
+            </form>
+
+            <p class="register-link">
+                Don't have an account?
+                <a href="register.html">Create one now</a>
+            </p>
+        </div>
+    </div>
+
+<footer class="footer" style="font-weight: bold;">
+    <div class="footer-container">
+  
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./Contact us.html">Contact Us</a></li>
+          <li><a href="./Terms of Service.html">Our Services</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h3>About CodeCare Hospital </h3>
+        <p>
+          At <strong>CodeCare Hospital</strong>, we deliver trusted healthcare powered by modern diagnostics, expert
+          consultations, and compassionate care - tailored for you.
+        </p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Get in Touch</h3>
+        <p>Email: info@codecarehospital.com</p>
+        <p>Phone: +20 100 000 0000</p>
+        <p>Address: Cairo, Egypt</p>
+        <div class="social">
+          <a href="https://www.facebook.com/lolazoda?locale=ar_AR">Facebook</a> |
+          <a href="https://github.com/MohamedZaky-zdragon50">github</a> |
+          <a href="https://www.linkedin.com/in/mohamed-zaky-0130a52a8/">LinkedIn</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+
+  <div class="loader">
+    <div class="logo">
+      <div class="heart">
+        <svg viewBox="0 0 100 100">
+          <path class="outline" d="M10,30 C10,10 40,10 50,30 C60,10 90,10 90,30 C90,60 50,90 50,90 C50,90 10,60 10,30 Z" fill="none" stroke="#e4002b" stroke-width="4" />
+          <polyline class="pulse" points="20,50 30,50 35,40 40,60 45,50 55,50" fill="none" stroke="#e4002b"
+            stroke-width="3" />
+        </svg>
+      </div>
+      <h1><span class="dark">Code</span><span class="red">Care</span></h1>
+    </div>
+  </div>
+
+</body>
+
+</html>
