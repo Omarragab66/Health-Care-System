@@ -1,0 +1,379 @@
+/* الخط العام */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+     font-family: Arial, sans-serif;
+}
+
+body {
+    background: hwb(0 94% 2%);
+    color: #333;
+}
+
+/* الشعار */
+header #logo {
+    width: 100px;
+    margin: 20px;
+}
+
+/* الحاوية العامة */
+#register-container {
+    max-width: 800px;
+    margin: 150px auto 50px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* المقدمة */
+.intro-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.intro-text h2 {
+    font-size: 32px;
+    color: #222;
+     transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.intro-text h2:hover {
+          transform: scale(1.05);
+} 
+
+.head-p {
+    color: black;
+    font-weight: 540;
+}
+
+
+
+.intro-text .highlight {
+    color: #e30808;
+    font-weight: bold;
+}
+
+/* الحقول */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+input:focus {
+    border-color: #e4002b;
+    background: #fef2f2;
+}
+
+/* الأخطاء */
+.error-msg {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+label{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+
+
+/* الزر */
+#submit-btn {
+    margin-top: 20px;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    background: #e4002b;
+    color: white;
+    border-radius: 10px;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+#submit-btn:enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+#submit-btn:hover:enabled {
+    background: #c10024;
+}
+
+/* شاشة التحميل */
+.loader {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+.loader .logo {
+    text-align: center;
+}
+.loader .red {
+    color: #e4002b;
+}
+.heart svg {
+    width: 100px;
+}
+.pulse {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: pulseAnim 2s infinite ease-in-out;
+}
+@keyframes pulseAnim {
+    0% {
+        stroke-dashoffset: 100;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    #register-container {
+        padding: 25px;
+    }
+}
+
+
+
+/* the Footer Style */
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 60px 20px 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: hsl(0, 100%, 50%);
+}
+
+.footer-column p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.social {
+    padding-left: 35px;
+}
+
+
+.social a {
+    color: #e22f1b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+
+.social a:hover {
+    color: hsl(0, 0%, 100%); }
+
+strong {
+    color: #e30808;
+}
+
+
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+/* Responsive Design */
+/* Responsive Design */
+/* @media (max-width: 600px) { */
+
+
+/* ************************** */
+
+/* NAV XXXXXXXXX */
+.navx {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* لضمان أن الهيدر يظهر فوق باقي العناصر */
+}
+
+.navbar {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+    /* تحديد أقصى عرض للشريط */
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* تنسيق روابط التنقل */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+/* التأثير عند التحويم */
+.nav-links li a:hover {
+    color: #e30808;
+}
+
+/* **************** */
+
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+    
+}
+
+
+/* اللوجو داخل الـ navbar */
+.logo {
+    position: static;
+    width: 110px;
+    height: 60px;
+    margin-left: 20px;
+    object-fit: contain;
+      transition: transform 0.3s ease;
+}
+
+
+
+ .logo-container {
+    flex-shrink: 0;
+}
+
+
+.logo:hover {
+    transform: scale(1.03);
+} 
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* ولضمان أن الـ HTML ما يسمحش بالتمدد الجانبي */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+
+

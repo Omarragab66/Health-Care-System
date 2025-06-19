@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+   background-color: rgb(250, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.container {
+   
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 50px 20px 25px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 35px;
+    margin-left: 350px;
+}
+
+.logo-container img {
+    width: 100px;
+    margin: 20px auto;
+}
+
+.welcome-text h1 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+     transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.welcome-text h1:hover {
+          transform: scale(1.05);
+} 
+
+.welcome-text .highlight {
+    color: #e4002b;
+    font-weight: bold;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #e4002b;
+    outline: none;
+}
+
+button#submit-btn {
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button#submit-btn:hover {
+    background-color: #c00025;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #e4002b;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+/* Loader Styles */
+.loader {
+    display: none; /* hide by default unless needed */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.logo .heart svg {
+    width: 40px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+/* NAV XXXXXXXXX */
+.navx {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* لضمان أن الهيدر يظهر فوق باقي العناصر */
+}
+
+.navbar {
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+    /* تحديد أقصى عرض للشريط */
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* تنسيق روابط التنقل */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+/* التأثير عند التحويم */
+.nav-links li a:hover {
+    color: #e30808;
+}
+
+/* **************** */
+
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+    
+}
+
+
+/* اللوجو داخل الـ navbar */
+.logo {
+    position: static;
+    width: 110px;
+    height: 60px;
+    margin-left: 20px;
+    object-fit: contain;
+      transition: transform 0.3s ease;
+}
+
+
+
+ .logo-container {
+    flex-shrink: 0;
+}
+
+
+.logo:hover {
+    transform: scale(1.03);
+} 
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* ولضمان أن الـ HTML ما يسمحش بالتمدد الجانبي */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/* the Footer Style */
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 35px 180px 30px;
+    margin: 0 -200px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: hsl(0, 100%, 50%);
+}
+
+.footer-column p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.social {
+    padding-left: 35px;
+}
+
+
+.social a {
+    color: #e22f1b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+
+.social a:hover {
+    color: hsl(0, 0%, 100%); }
+
+strong {
+    color: #e30808;
+}
+
+
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,488 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e5c8c8;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* NAV XXXXXXXXXXXXXXX */
+.navx{
+   position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* لضبط الروابط على اليمين */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    z-index: 1000; /* لضمان أن الهيدر يظهر فوق باقي العناصر */
+}
+
+.navbar {
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* تحديد أقصى عرض للشريط */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+/* تنسيق روابط التنقل */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* التأثير عند التحويم */
+.nav-links li a:hover {
+    color: #e30808;
+}
+ 
+
+/* **************** */
+
+
+/* تنسيق العنوان H1 */
+.h1 {
+    color: #000000;
+    text-align: center;
+       margin: 0;
+    padding: 0;
+    font-size: 22px;
+    transition: transform 0.3s ease, color 0.3s ease; /* تأثير الانتقال على التحول واللون */
+}
+
+/* تنسيق رأس الصفحة */
+.page-header {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* تأثير الظل للنص */
+    padding: 50px 10px 20px;
+    margin-right: 10px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* تأثير الانتقال على الخلفية واللون */
+}
+
+/* تنسيق الفقرة داخل رأس الصفحة */
+.page-header p {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease; 
+}
+
+
+.hover-title {
+    color: hsl(0, 0%, 0%);
+    transition: color 0.4s ease, transform 0.3s ease;
+}
+
+
+.hover-title .highlight {
+    color: #e30808;
+    transition: color 0.4s ease; 
+}
+
+
+.hover-title:hover {
+    color: #e30808;
+    transform: scale(1.05); /
+}
+
+
+.hover-title:hover .highlight {
+    color: black; /* تغيير اللون عند التحويم */
+}
+
+
+body > p {
+    text-align: center;
+    margin: 10px auto 30px;
+    max-width: 600px;
+    color: hsl(0, 2%, 10%);
+    font-weight: bold;
+}
+
+/* الحاوية العامة لكل الأطباء */
+.doctor-container {
+     display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+}
+
+
+/* البطاقة */
+.doctor-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    z-index: 1; 
+}
+
+
+.doctor-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    background-color: #f8f8f8; 
+}
+
+
+.doctor-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.doctor-card:hover img {
+    transform: scale(1.1); /* تكبير الصورة عند  */
+    filter: brightness(1.2); /* زيادة السطوع */
+}
+
+
+/* صورة الطبيب */
+.doctor-card img {
+    border-radius: 10px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid #e30808;
+    margin-bottom: 15px;
+}
+
+/* النص */
+.doctor-card h3 {
+    margin: 10px 0 5px;
+    color: #e30808;
+    font-size: 20px;
+}
+
+.doctor-card p {
+    margin: 4px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.doctor-card p strong {
+    color: #c41d2c;
+}
+
+.highlight {
+    display: inline;
+    color: #e30808; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+
+.logo-container {
+    flex-shrink: 0;
+}
+
+/* **************** */
+
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+    
+}
+
+
+/* اللوجو داخل الـ navbar */
+.logo {
+    position: static;
+    width: 110px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 50px;
+    object-fit: contain;
+      transition: transform 0.3s ease;
+}
+
+
+
+ .logo-container {
+    flex-shrink: 0;
+}
+
+
+.logo:hover {
+    transform: scale(1.03);
+} 
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* ولضمان أن الـ HTML ما يسمحش بالتمدد الجانبي */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/*  الخاصة بالزر */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* الزر */
+.book-btn {
+    background-color: #e30808; 
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+.book-btn:hover {
+    background-color: #e5c8c8;
+    color: #000000;
+    border: dashed 3px red ;
+    transform: translateY(-2px);
+    transform: scale(1.1); /* تكبير الزر */
+}
+
+
+
+/* the Footer Style */
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 60px 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.footer-column p {
+  line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+.social a{
+  color: #e22f1b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+strong {
+    color: #e30808; 
+}
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+
+
+}
+
+
+
+.animated-bg {
+  background: linear-gradient(270deg, #e5c8c8, #ffffff, hwb(6 56% 2%));
+  background-size: 600% 600%;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+body.loading {
+  overflow: hidden;
+}
+
+#mainco {
+  display: none;
+}
+
+
+body {
+  margin: 0;
+  background: white;
+  min-height: 696px; /* تأكد من أن ارتفاع الصفحة سيكون على الأقل بحجم نافذة المتصفح */
+  position: relative; /* يسمح باستخدام position absolute للـ loader */
+}
+
+/* إخفاء محتوى الصفحة الرئيسي حتى يظهر اللودر */
+#mainco {
+  display: none; /* إخفاء المحتوى الرئيسي حتى يتم تحميل الصفحة */
+  position: relative; /* لضمان أن المحتوى سيظل في موضعه */
+  z-index: 1; /* لتحديد ترتيب المحتوى في الظهور */
+}
+
+/* تنسيق اللودر ليظهر في المنتصف */
+.loader {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white; /* يغطي أي محتوى تحته */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* باقي التنسيقات كما هي */
+.heart svg {
+  width: 100px;
+  height: 100px;
+}
+
+.pulse {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: pulseMove 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseMove {
+  0% {
+    stroke-dashoffset: 60;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 60;
+  }
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.dark {
+  color: #333;
+}
+
+.red {
+  color: #e4002b;
+}
+
+
+
+
+
+

@@ -1,0 +1,478 @@
+/* services.css - Final Professional Landing & Terms Styles */
+/* Base Typography and Colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #faf0f0;
+  color: #222222;
+  line-height: 1.6;
+}
+a {
+  color: #1e3a8a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #e4002b;
+}
+
+/* Navbar removed */
+/* Landing Section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 7rem auto 2rem;
+  padding: 0 1rem;
+}
+.content {
+  flex: 1 1 45%;
+}
+.image-area {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.main-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #e30808;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-variant:initial;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-title:hover {
+     transform: translateY(-6px);
+}
+.description {
+  font-size: 1.125rem;
+  color: #211f1f;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.subscribe-btn {
+  display: inline-block;
+  background-color: rgb(30, 64, 175); 
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.image-area img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-right: -25px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.image-area img:hover {
+  transform: scale(1.03);
+}
+
+/* Terms Section */
+.terms-wrapper {
+  background-color: #ffffff;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+.terms-wrapper > header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.terms-wrapper > header h1 {
+  color: black;
+  transition: color 0.5s ease-in-out;
+}
+
+.terms-wrapper > header h1 span {
+  color: #e30808;  
+  font-size: larger;
+    transition: color 0.5s ease-in-out;
+}
+
+
+.terms-wrapper > header h1:hover {
+  color: #e30808; 
+}
+
+.terms-wrapper > header h1:hover span {
+  color: black;   
+}
+
+
+.terms-wrapper > header p {
+  font-size: 1rem;
+  color: #211f1f;
+}
+
+/* Individual Term Cards */
+.terms-wrapper section {
+  background-color: #f3f4f6;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.terms-wrapper section h2 {
+  font-size: 1.75rem;
+  color: #e30808;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.terms-wrapper section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 4rem;
+  height: 4px;
+  background-color: rgb(30, 64, 175);
+}
+.terms-wrapper section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.terms-wrapper section ul li {
+  background-color: #ffffff;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500px;
+}
+
+/* the Footer Style */
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 60px 20px 30px;
+    font-family: Arial, sans-serif;
+    margin: -10px -220px -120px !important;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: hsl(0, 100%, 50%);
+}
+
+.footer-column p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.social a {
+    color: #e22f1b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: hsl(0, 0%, 100%); }
+
+strong {
+    color: #e30808;
+}
+
+/* **************** */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { flex-direction: column-reverse; gap: 2rem; }
+  .subscribe-btn { width: 100%; text-align: center; }
+  .navbar { flex-direction: column; align-items: flex-start; }
+}
+
+
+/* NAV XXXXXXXXX */
+.navx {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    z-index: 1000;
+    /* لضمان أن الهيدر يظهر فوق باقي العناصر */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    /* تحديد أقصى عرض للشريط */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+/* تنسيق روابط التنقل */
+.nav-links li a {
+    text-decoration: none;
+    color: #211f1f;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+/* التأثير عند التحويم */
+.nav-links li a:hover {
+    color: #e30808;
+}
+
+/* **************** */
+
+
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+    
+}
+
+
+/* اللوجو داخل الـ navbar */
+.logo {
+    position: static;
+    width: 110px;
+    height: 60px;
+    margin-left: 20px;
+    object-fit: contain;
+      transition: transform 0.3s ease;
+}
+
+
+
+ .logo-container {
+    flex-shrink: 0;
+}
+
+
+.logo:hover {
+    transform: scale(1.03);
+} 
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* ولضمان أن الـ HTML ما يسمحش بالتمدد الجانبي */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 15px 20px;
+  }
+  #appointments thead {
+    display: none;
+  }
+  #appointments tbody td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 10px;
+  }
+  #appointments tbody tr {
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+  }
+  #appointments tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #1e3a8a;
+  }
+
+  
+}
+
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+    margin: 50px;
+  }
+  
+  .nav-links {
+    text-align: center;
+  }
+
+
+}
+
+
+/* **************** */
+
+
+/* تنسيق اللودر ليظهر في المنتصف */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    /* يغطي أي محتوى تحته */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heart svg {
+    width: 100px;
+    height: 100px;
+}
+
+.pulse {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: pulseMove 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseMove {
+    0% {
+        stroke-dashoffset: 60;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 60;
+    }
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.dark {
+    color: #333;
+}
+
+.red {
+    color: #e4002b;
+}
+
+/* **************** */
+
+.btn-link{
+  background-color: rgb(30, 64, 175);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: large;
+  padding: 20px 20px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  margin-left: 200px;
+}
+
+.btn-link:hover {
+  transition: background-color 0.3s;
+  /* color: ; */
+   background-color: #e30808;
+   color: white;
+
+}
